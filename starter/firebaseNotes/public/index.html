@@ -25,6 +25,7 @@
     <script defer src="/__/firebase/8.3.1/firebase-auth.js"></script>
     <script defer src="/__/firebase/8.3.1/firebase-database.js"></script>
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <script defer src="js/signIn.js"></script>
   </head>
   <body>
 
@@ -40,9 +41,13 @@
                             Log in to view your notes or create a new one. 
                         </h2>
                         <br>
-                        <p class="has-text-centered">
-                            <a class="button is-medium is-info is-outlined">
+                        <p id="signIn" class="has-text-centered">
+                            <a id="signInButton" class="button is-medium is-info is-outlined">
                                 Sign In
+                            </a>
+                            <br></br>
+                            <a id="signInGoogleButton">
+                                Or, sign in with Google
                             </a>
                         </p>
                     </div>
@@ -50,6 +55,5 @@
             </div>
         </div>
     </section>
-    
   </body>
 </html>
